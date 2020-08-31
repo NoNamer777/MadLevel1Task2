@@ -7,4 +7,5 @@
     <string name="tv_conjunction_result_input_label">A ^ B</string>
     <string name="tv_input_truth">T</string>
     <string name="tv_input_false">F</string>
+    <string name="response">Number of Correct Answers %d</string>
 </resources>
