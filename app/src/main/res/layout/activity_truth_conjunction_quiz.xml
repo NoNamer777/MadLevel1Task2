@@ -8,12 +8,229 @@
     tools:context=".TruthConjunctionQuizActivity">
 
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/tv_title"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvInputLabelA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_input_a"
+                android:textAlignment="center"
+                android:textColor="@android:color/secondary_text_light"
+                android:textColorHighlight="@android:color/secondary_text_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInputLabelB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_input_b"
+                android:textAlignment="center"
+                android:textColor="@android:color/secondary_text_light"
+                android:textColorHighlight="@android:color/secondary_text_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvConjunctionResultLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_conjunction_result_input_label"
+                android:textAlignment="center"
+                android:textColor="@android:color/secondary_text_light"
+                android:textColorHighlight="@android:color/secondary_text_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCase1Input1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_input_truth"
+                android:textAlignment="center"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textColorHighlight="@android:color/tertiary_text_light"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvCase1Input2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_input_truth"
+                android:textAlignment="center"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textColorHighlight="@android:color/tertiary_text_light"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ptCase1Input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:textAlignment="center"
+                tools:ignore="LabelFor, AutoFill" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCase2Input1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_input_truth"
+                android:textAlignment="center"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textColorHighlight="@android:color/tertiary_text_light"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvCase2Input2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_input_false"
+                android:textAlignment="center"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textColorHighlight="@android:color/tertiary_text_light"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ptCase2Input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:textAlignment="center"
+                tools:ignore="LabelFor, AutoFill" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCase3Input1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_input_false"
+                android:textAlignment="center"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textColorHighlight="@android:color/tertiary_text_light"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvCase3Input2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_input_truth"
+                android:textAlignment="center"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textColorHighlight="@android:color/tertiary_text_light"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ptCase3Input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:textAlignment="center"
+                tools:ignore="LabelFor, AutoFill" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCase4Input1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_input_false"
+                android:textAlignment="center"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textColorHighlight="@android:color/tertiary_text_light"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvCase4Input2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tv_input_false"
+                android:textAlignment="center"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textColorHighlight="@android:color/tertiary_text_light"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ptCase4Input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:textAlignment="center"
+                tools:ignore="LabelFor, AutoFill" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_success_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
